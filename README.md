@@ -1,5 +1,5 @@
 <header>
-   </hgroup>
+   <hgroup>
      <h2>Ticket Restaurant, webserver API </h2>
      <h5>On this project you're going to find:</h5>
    </hgroup>
@@ -22,4 +22,9 @@
 
 <p>It has got an unique purpose: to be a powerful Restful API to control a restaurant tickets web-service.</P>
 
-<h3> Initializing </h3>
+<header>
+  <hgroup>
+    <h3> Initializing </h3>
+    <h5> MongoDB </h5>
+  </hgroup>
+</header>
