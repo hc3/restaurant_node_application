@@ -1,0 +1,32 @@
+{
+  "name": "restaurant_node_application",
+  "version": "1.0.0",
+  "description": "Restaurant Service ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagolimaa/restaurant_node_application.git"
+  },
+  "keywords": [
+    "Restaurant",
+    "Tickets",
+    "NodeJS",
+    "AngularJS",
+    "Bootstrap",
+    "Front-End",
+    "Back-end",
+    "MongoDB",
+    "Services",
+    "Directives"
+  ],
+  "author": "Thiago Brito de Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagolimaa/restaurant_node_application/issues"
+  },
+  "homepage": "https://github.com/thiagolimaa/restaurant_node_application"
+}
