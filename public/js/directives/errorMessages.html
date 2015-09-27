@@ -1,0 +1,36 @@
+<!-- Form Cardno -->
+<section ng-show="ticketForm.cardno.$dirty" ng-messages="ticketForm.cardno.$error">
+  <span ng-message="required" class="alert alert-danger col-md-12 error-message">
+      Please, fill up cardno!
+  </span>
+  <span ng-message="minlength" class="alert alert-danger col-md-12 error-message">
+      Please, enter at least 3 numbers!
+  </span>
+  <span ng-message="maxlength" class="alert alert-danger col-md-12 error-message">
+      Please, enter at most 6 numbers!
+  </span>
+</section>
+
+<!-- Form Type -->
+<section ng-show="ticketForm.type.$error" ng-messages="ticketForm.type.$error">
+  <span ng-message="required" class="alert alert-danger col-md-12 error-message">
+      Please, select a type!
+  </span>
+</section>
+
+<!-- Form Price -->
+<section ng-show="ticketForm.price.$dirty" ng-messages="ticketForm.price.$error">
+  <span ng-message="required" class="alert alert-danger col-md-12 error-message">
+      Please, inform the price!
+  </span>
+  <span ng-message="pattern" class="alert alert-danger col-md-12 error-message">
+      Please respect the pattern shown 99.99
+  </span>
+</section>
+
+<!-- Date-Sold -->
+<section ng-show="ticketForm.datesold.$error" ng-messages="ticketForm.datesold.$error">
+   <span ng-message="required" class="alert alert-danger col-md-12 error-message">
+     Please select the date!
+   </span>
+</section>

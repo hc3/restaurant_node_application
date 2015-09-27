@@ -1,0 +1,34 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>
+        Cardno
+      </th>
+      <th>
+        Type
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        Date Sold
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="ticket in data">
+     <td>
+       {{ticket.cardno}}
+     </td>
+     <td>
+       {{ticket.type}}
+     </td>
+     <td>
+       {{ticket.price}}
+     </td>
+     <td>
+       {{ticket.datesold | date:'dd/MM/yyyy HH:mm' }}
+     </td>
+   </tr>
+   </tbody>
+  </table>

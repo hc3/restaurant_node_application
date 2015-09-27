@@ -1,0 +1,79 @@
+.jumbotron{
+  text-align:center;
+  background:url('../assets/img/restaurant.jpg');
+  background-position: bottom right;
+}
+
+.jumbotron > h1 {
+  background-color: white;
+  margin-top: 150px;
+  border-radius:6px;
+}
+
+article > h4 {
+  font-size:21px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  line-height: inherit;
+}
+
+#news{
+  margin-top:30px;
+}
+
+#get-started{
+
+}
+
+#welcome{
+
+}
+
+form{
+  margin-top:40px;
+}
+
+.btn-primary{
+  background-color:#800000;
+  border-color: #8B0000;
+  transition: 200ms ease-in;
+  -webkit-transtion: 200ms ease-in;
+  -moz-transition: 200ms ease-in;
+  -ms-transition: 200ms ease-in;
+}
+
+.btn-primary:hover{
+   background:#007f00;
+   border: 1px solid #007f00;
+   transition: 200ms ease-out;
+   -webkit-transtion: 200ms ease-out;
+   -moz-transition: 200ms ease-out;
+   -ms-transition: 200ms ease-out;
+}
+
+.btn-primary[disabled]{
+  background-color:#800000;
+  border-color: #8B0000;
+  transition: 200ms ease-in;
+  -webkit-transtion: 200ms ease-in;
+  -moz-transition: 200ms ease-in;
+  -ms-transition: 200ms ease-in;
+}
+
+.btn-primary[disabled]:hover{
+  background:#007f00;
+  border: 1px solid #007f00;
+  transition: 200ms ease-out;
+  -webkit-transtion: 200ms ease-out;
+  -moz-transition: 200ms ease-out;
+  -ms-transition: 200ms ease-out;
+
+}
+
+input[type="text"], input[type="date"], input[type="submit"], select, button, label{
+  margin-top:10px;
+}
+
+.error-message{
+  text-align:center;
+}
