@@ -23,6 +23,13 @@
     "Services",
     "Directives"
   ],
+  "dependencies":{
+    "body-parser": "*",
+    "express": "*",
+    "method-override": "*",
+    "mongoose": "*",
+    "morgan": "*"
+  },
   "author": "Thiago Brito de Lima",
   "license": "ISC",
   "bugs": {
