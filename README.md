@@ -1,5 +1,5 @@
 # restaurant_node_application
-<h1>Ticket Restaurant, webserver API: NodeJS, AngularJS, Bootstrap and MongoDB.</h1>
+<h2>Ticket Restaurant, webserver API: NodeJS, AngularJS, Bootstrap and MongoDB.</h2>
 <h3>On this project you're going to find:</h3>
 
 <ul>
