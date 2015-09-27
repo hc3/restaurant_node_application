@@ -1,4 +1,3 @@
-# restaurant_node_application
 <h2>Ticket Restaurant, webserver API </h2>
 <h3>On this project you're going to find:</h3>
 
