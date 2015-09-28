@@ -31,5 +31,5 @@
 
 <p>If you have MongoDB installed, you just need to initialize the MongoDB service:</p>
 
-<code> cd c:\Mongodb\bin </code>
+<code> cd c:\Mongodb\bin </code><br>
 <code> mongod </code>
