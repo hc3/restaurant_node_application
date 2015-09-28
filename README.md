@@ -36,6 +36,7 @@
   <code>
       cd c:\Mongodb\bin<br>
   </code>
+  <br>
    <p>After accessed this path on the terminal, please started the service:</p>
   <code>
     mongod
@@ -53,8 +54,9 @@
 
 <section>
   <code>
-    cd c:\NodeJS\restaurant_node_application<br>
+    cd c:\NodeJS\restaurant_node_application
   </code>
+   <br>
    <p>After accessed this path on the terminal, install the dependencies:</p>
   <code>
     npm install
