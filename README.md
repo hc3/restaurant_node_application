@@ -30,3 +30,6 @@
 </header>
 
 <p>If you have MongoDB installed, you just need to initialize the MongoDB service:</p>
+
+<code> cd c:\Mongodb\bin </code>
+<code> mongod </code>
