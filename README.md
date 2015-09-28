@@ -28,3 +28,5 @@
     <h5> MongoDB </h5>
   </hgroup>
 </header>
+
+<p>If you have MongoDB installed, you just need to initialize the MongoDB service:</p>
