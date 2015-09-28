@@ -32,7 +32,7 @@
 <p>If you have MongoDB installed, you just need to initialize the MongoDB service:</p>
 
 <section>
-   <code> cd c:\Mongodb\bin
+   <code> cd c:\Mongodb\bin<br>
     //After accessed this path on the terminal, please started the service:<br>
     mongod
     </code>
