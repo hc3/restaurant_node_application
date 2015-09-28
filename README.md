@@ -46,6 +46,6 @@
 <header>
   <hgroup>
     <h3> Initializing </h3>
-    <h5> Node </h5>
+    <h5> NodeJS </h5>
   </hgroup>
 </header>
