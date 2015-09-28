@@ -6,6 +6,7 @@
    </hgroup>
 </header>
 
+<nav>
   <ul>
     <li>
       <a href="https://angularjs.org/" target="blank">AngularJS</a>
@@ -20,6 +21,7 @@
       <a href="http://getbootstrap.com/" target="blank">BootStrap</a>
     </li>
   </ul>
+</nav>
 
 <p>It has got an unique purpose: to be a powerful Restful API to control a restaurant tickets web-service.</P>
 
