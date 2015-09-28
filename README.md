@@ -33,9 +33,9 @@
 
 <section>
   <code>
-      cd c:\Mongodb\bin
+      cd c:\Mongodb\bin <br>
   </code>
-   <br>
+
    <p>After accessed this path on the terminal, please started the service:</p>
   <code>
     mongod
