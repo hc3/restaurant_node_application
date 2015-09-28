@@ -64,3 +64,9 @@
     npm install
   </code>
 </section>
+
+<article>
+  If the installation is well succeeded, please start the service by using:
+</article>
+<br>
+<code>node server.js</code>
