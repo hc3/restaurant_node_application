@@ -1,1 +1,1 @@
-var app = angular.module('RestaurantTicket', ["ngMessages"]);
+var app = angular.module('RestaurantTicket', ["ngMessages", "ui.mask"]);
