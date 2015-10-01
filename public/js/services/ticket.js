@@ -1,4 +1,7 @@
 app.factory('_APIPostTicket', ['$http', function($http){
+
+var _getTicket = function(){
+
  return $http.get("/ticket")
         .success(function(data){
           return data;
@@ -6,5 +9,10 @@ app.factory('_APIPostTicket', ['$http', function($http){
         .error(function(err){
           return err;
        });
+  };
+
+  return {
+    getTicket : _getTicket
+  };
 
 }]);
