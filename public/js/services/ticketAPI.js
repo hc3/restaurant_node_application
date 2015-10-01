@@ -11,8 +11,15 @@ var _getTicket = function(){
        });
   };
 
+var _saveTicket = function(){
+
+ return $http.post("/ticket", ticket);
+
+  };
+
   return {
     getTicket : _getTicket
+    saveTicket: _saveTicket
   };
 
 }]);
