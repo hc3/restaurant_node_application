@@ -36,7 +36,7 @@ app.controller('RestaurantTickets', ['$scope', '$http', 'ticketsAPI', function($
 
     $scope.addTicket = function(ticket){
       ticket.data = new Date();
-  		$http.post("/ticket", ticket).success(function (data) {
+  		ticketsAPI.saveTicket(ticket).success(function (data) {
   			delete $scope.ticket;
   			$scope.ticketForm.$setPristine();
         loadTickets();
