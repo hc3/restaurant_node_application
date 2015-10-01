@@ -1,4 +1,4 @@
-app.controller('RestaurantTickets', ['$scope', '$http', function($scope, $http){
+app.controller('RestaurantTickets', ['$scope', '$http', '_APIPostTicket', function($scope, $http, _APIPostTicket){
     $scope.header = {
 
          title: 'Alabhama Online Food Service'
@@ -26,7 +26,7 @@ app.controller('RestaurantTickets', ['$scope', '$http', function($scope, $http){
     $scope.types = ['Single', 'Round-trip'];
 
     var loadTickets = function () {
-  		$http.get("/ticket").success(function (data) {
+  		_APIPostTicket.success(function (data) {
   			$scope.tickets = data;
   		}).error(function (data, status) {
   			$scope.message = "Aconteceu um problema: " + data;
