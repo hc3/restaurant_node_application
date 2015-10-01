@@ -15,10 +15,10 @@ module.exports = function(app) {
 * @param {Object} res HTTP response object.
 */
 findAllTickets = function(req, res) {
-	console.log("GET - /ticket");
-	return Ticket.find(function(err, ticket) {
+	console.log("GET - /tickets");
+	return Ticket.find(function(err, tickets) {
 		if (!err) {
-			return res.send(ticket);
+			return res.send(tickets);
 		} else {
 			res.statusCode = 500;
 			console.log('Internal error(%d): %s',res.statusCode,err.message);
@@ -148,7 +148,7 @@ deleteTicket = function(req, res) {
 	});
 }
 
-app.get('/ticket', findAllTickets);
+app.get('/tickets', findAllTickets);
 app.get('/ticket/:id', findById);
 app.post('/ticket', addTicket);
 app.put('/ticket/:id', updateTicket);
