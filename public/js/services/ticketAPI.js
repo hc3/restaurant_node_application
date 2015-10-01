@@ -1,4 +1,4 @@
-app.factory('_APIPostTicket', ['$http', function($http){
+app.factory('ticketsAPI', ['$http', function($http){
 
 var _getTicket = function(){
 
