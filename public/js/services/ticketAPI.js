@@ -11,14 +11,14 @@ var _getTicket = function(){
        });
   };
 
-var _saveTicket = function(){
+var _saveTicket = function(ticket){
 
  return $http.post("/ticket", ticket);
 
   };
 
   return {
-    getTicket : _getTicket
+    getTicket : _getTicket,
     saveTicket: _saveTicket
   };
 
