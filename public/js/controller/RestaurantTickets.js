@@ -26,7 +26,7 @@ app.controller('RestaurantTickets', ['$scope', '$http', '_APIPostTicket', functi
     $scope.types = ['Single', 'Round-trip'];
 
     var loadTickets = function () {
-  		_APIPostTicket.success(function (data) {
+  		_APIPostTicket.getTicket().success(function (data) {
   			$scope.tickets = data;
   		}).error(function (data, status) {
   			$scope.message = "Aconteceu um problema: " + data;
