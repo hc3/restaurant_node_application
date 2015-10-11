@@ -25,6 +25,7 @@ app.controller('RestaurantTickets', ['$scope', '$http', 'ticketsAPI', function($
 
     $scope.types = ['Single', 'Round-trip'];
 
+    
     var loadTickets = function () {
   		ticketsAPI.getTicket().success(function (data) {
   			$scope.tickets = data;
