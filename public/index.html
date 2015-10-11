@@ -62,7 +62,7 @@
                  <div class="form-group">
                      <label class="col-md-4 control-label" for="datesold">Date Sold:</label>
                      <div class="col-md-8">
-                       <input class="form-control" type="date" ng-model="ticket.datesold" name="datesold" id="datesold" placeholder="Today\'s date" ng-required="true">
+                       <input class="form-control" type="date" ng-model="ticket.datesold" name="datesold" id="datesold" min="{{today}}" placeholder="Today\'s date" ng-required="true">
                      </div>
                  </div>
                  <div class="form-group">

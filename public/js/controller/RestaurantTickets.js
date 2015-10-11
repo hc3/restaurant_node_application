@@ -22,10 +22,13 @@ app.controller('RestaurantTickets', ['$scope', '$http', 'ticketsAPI', function($
 
     $scope.tickets = [];
 
+    var today=new Date();
+    $scope.today = today.toISOString();
+
 
     $scope.types = ['Single', 'Round-trip'];
 
-    
+
     var loadTickets = function () {
   		ticketsAPI.getTicket().success(function (data) {
   			$scope.tickets = data;
