@@ -45,6 +45,12 @@ app.controller('RestaurantTickets', ['$scope', '$http', 'ticketsAPI', function($
     });
   };
 
+  $scope.isTicketSelected = function(tickets){
+    return tickets.some(function(ticket){
+      return ticket.selected;  
+    });
+  };
+
   loadTickets();
 
 }]);
