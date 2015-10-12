@@ -1,25 +1,36 @@
 app.factory('ticketsAPI', ['$http', function($http){
 
-var _getTicket = function(){
+  var _getTicket = function(){
 
- return $http.get("/tickets")
-        .success(function(data){
-          return data;
-        })
-        .error(function(err){
-          return err;
-       });
+    return $http.get("/tickets")
+           .success(function(data){
+             return data;
+           })
+           .error(function(err){
+             return err;
+          });
   };
 
-var _saveTicket = function(ticket){
+  var _saveTicket = function(ticket){
 
- return $http.post("/ticket", ticket);
+     return $http.post("/ticket", ticket);
 
   };
+
+  var _deleteTicket = function(ticket){
+
+      return $http.delete("/ticket/:id", ticket){
+
+      }
+
+  };
+
+
 
   return {
     getTicket : _getTicket,
-    saveTicket: _saveTicket
+    saveTicket: _saveTicket,
+    deleteTicket: _deleteTicket
   };
 
 }]);
