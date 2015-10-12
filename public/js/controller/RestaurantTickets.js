@@ -47,7 +47,13 @@ app.controller('RestaurantTickets', ['$scope', '$http', 'ticketsAPI', function($
 
   $scope.isTicketSelected = function(tickets){
     return tickets.some(function(ticket){
-      return ticket.selected;  
+      return ticket.selected;
+    });
+  };
+
+  $scope.deleteTicket = function(tickets){
+    $scope.tickets = tickets.filter(function(ticket){
+      if (!ticket.selected) return ticket;
     });
   };
 
