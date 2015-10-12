@@ -152,6 +152,6 @@ app.get('/tickets', findAllTickets);
 app.get('/ticket/:id', findById);
 app.post('/ticket', addTicket);
 app.put('/ticket/:id', updateTicket);
-app.delete('/ticket/_id:', deleteTicket);
+app.delete('/ticket/:id', deleteTicket);
 
 }
