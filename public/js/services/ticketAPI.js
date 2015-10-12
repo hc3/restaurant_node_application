@@ -19,12 +19,9 @@ app.factory('ticketsAPI', ['$http', function($http){
 
   var _deleteTicket = function(ticket){
 
-      return $http.delete("/ticket/:id", ticket){
-
-      }
+     return $http.delete("/ticket/id:" + ticket._id, {data: {id: ticket._id}});
 
   };
-
 
 
   return {
