@@ -129,7 +129,7 @@ updateTicket = function(req, res) {
 */
 deleteTicket = function(req, res) {
 	console.log("DELETE - /ticket/:id");
-	return Ticket.findById(req.params._id, function(err, ticket) {
+	return Ticket.findById(req.params.id, function(err, ticket) {
 		if (!ticket) {
 			res.statusCode = 404;
 			return res.send({ error: 'Not found' });
