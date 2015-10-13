@@ -2,7 +2,7 @@ app.factory('ticketsAPI', ['$http', function($http){
 
   var _getTicket = function(){
 
-    return $http.get("/tickets")
+    return $http.get("/ticket")
            .success(function(data){
              return data;
            })
