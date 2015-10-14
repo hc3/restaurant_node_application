@@ -13,13 +13,13 @@ app.factory('ticketsAPI', ['$http', function($http){
 
   var _saveTicket = function(ticket){
 
-     return $http.post("/ticket", ticket);
+    return $http.post("/ticket", ticket);
 
   };
 
   var _deleteTicket = function(ticket){
 
-     return $http.delete("/ticket/:id", {params:{id: ticket._id}});
+    return $http.delete("/ticket/:id", {params:{id: ticket._id}});
 
   };
 
