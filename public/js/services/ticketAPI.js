@@ -2,8 +2,8 @@ app.factory('ticketsAPI', ['$http', function($http){
 
   var _getTicket = function(){
 
-    return $http.get("http://localhost:3412/ticket");
-          
+    return $http.get("/ticket");
+
   };
 
   var _saveTicket = function(ticket){
