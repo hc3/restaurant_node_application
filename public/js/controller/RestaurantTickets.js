@@ -60,6 +60,11 @@ app.controller('RestaurantTickets', ['$scope', 'ticketsAPI', function($scope, ti
     });
   };
 
+  $scope.orderSearch = function(field){
+    $scope.orderCriteria = field;
+    $scope.orderDirection = !$scope.orderDirection;
+  };
+
   loadTickets();
 
 }]);
