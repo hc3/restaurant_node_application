@@ -1,13 +1,14 @@
-<table ng-show="data.length > 0" class="table table-striped">
+<input class="form-control" type="text" ng-model="searchIt" placeholder="Which ticket are you looking for?"/>
+<table class="table table-striped" ng-show="data.length > 0">
   <thead>
     <tr>
       <th>
       </th>
       <th>
-        Cardno
+        <a href="" ng-click="orderSearch('data.cardno')"> Cardno</a>
       </th>
       <th>
-        Type
+        <a href="" ng-click="orderSearch('data.type')">Type</a>
       </th>
       <th>
         Price
@@ -18,7 +19,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="ticket in data">
+    <tr ng-repeat="ticket in data | filter:searchIt | orderBy:orderCriteria:orderDirection" >
       <td>
         <input type="checkbox" ng-model="ticket.selected"/>
       </td>
