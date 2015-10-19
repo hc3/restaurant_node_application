@@ -4,6 +4,12 @@ app.directive('ticketTable', function(){
     scope:{
       data:'='
     },
-    templateUrl: 'js/directives/ticketTable.html'
+    templateUrl: 'js/directives/ticketTable.html',
+    link: function(data, element, attrs){
+      data.orderSearch = function(field){
+        data.orderCriteria = field;
+        data.orderDirection = !data.orderDirection;
+      }
+    }
   };
 });
