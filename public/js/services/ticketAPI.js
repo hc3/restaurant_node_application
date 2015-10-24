@@ -2,13 +2,13 @@ app.factory('ticketsAPI', ['$http', function($http){
 
   var _getTicket = function(){
 
-    return $http.get("/ticket");
+    return $http.get("/ticket/");
 
   };
 
   var _saveTicket = function(ticket){
 
-    return $http.post("/ticket", ticket);
+    return $http.post("/ticket/", ticket);
 
   };
 
