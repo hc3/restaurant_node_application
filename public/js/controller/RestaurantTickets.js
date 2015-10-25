@@ -1,4 +1,4 @@
-app.controller('RestaurantTickets', ['$scope', 'ticketsAPI', function($scope, ticketsAPI){
+app.controller('RestaurantTickets', ['$scope', 'ticketsAPI', 'getTicketsAPI', function($scope, ticketsAPI, getTicketsAPI){
     $scope.header = {
 
          title: 'Alabhama Online Food Service'
