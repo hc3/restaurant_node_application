@@ -28,7 +28,7 @@ app.controller('RestaurantTickets', ['$scope', 'ticketsAPI', 'getTicketsAPI', fu
     $scope.today = today.toISOString();
 
     var loadTickets = function () {
-  		ticketsAPI.getTicket().success(function (data) {
+  		getTicketsAPI.getTicket().success(function (data) {
   			$scope.tickets = data;
   		}).error(function (data, status) {
   			$scope.message = "Aconteceu um problema: " + data;
