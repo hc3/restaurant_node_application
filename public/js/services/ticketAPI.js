@@ -1,11 +1,5 @@
 app.factory('ticketsAPI', ['$http', function($http){
 
-  var _getTicket = function(){
-
-    return $http.get("/ticket/");
-
-  };
-
   var _saveTicket = function(ticket){
 
     return $http.post("/ticket/", ticket);
@@ -20,7 +14,6 @@ app.factory('ticketsAPI', ['$http', function($http){
 
 
   return {
-    getTicket : _getTicket,
     saveTicket: _saveTicket,
     deleteTicket: _deleteTicket
   };
